@@ -22,6 +22,7 @@ body {
     display: block;
     margin: 15px;
     min-width: 200px;
+
 }
 
 .grid-element:hover .grid-image {
@@ -83,16 +84,12 @@ body {
 }
 
 .header-image-text {
+    margin-left: 0.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    word-wrap: break-word;
     font: bold 2vw "Georgia";
-    max-font-size: 3vh;
-    font-max-size: 3vh;
     text-align: center;
-    max-width: 50%;
-    width: 7vw;
     height: 14vh;
 }
 
@@ -325,11 +322,12 @@ body {
         display: -ms-grid;
         -ms-grid-columns: 25vw 0.5vmin 1fr;
         -ms-grid-rows: 15vh 0.5vmin auto;
+        width: 100% !important;
     }
 
     .header-image {
         display: -ms-grid;
-        -ms-grid-columns: 1fr 1fr;
+        -ms-grid-columns: 7vw 1vw 7vw;
         -ms-grid-column: 1;
         -ms-grid-row: 1;
     }
@@ -339,7 +337,8 @@ body {
     }
 
     .header-image-text {
-        -ms-grid-column: 2;
+        -ms-grid-column: 3;
+        margin-right: 20vw;
     }
 
     #header-text {
@@ -366,6 +365,9 @@ body {
         -ms-grid-row: 3;
         min-height: calc(85vh - 0.5vmin);
         height: calc(100% + 4vh);
+    }
+    .grid-element{
+        width: 200px !important;
     }
 
     .poem {
