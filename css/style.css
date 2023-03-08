@@ -63,6 +63,7 @@ body {
     min-width: 100%;
     height: 100%;
     min-height: 100vh;
+
 }
 
 .header-image {
@@ -93,6 +94,16 @@ body {
     max-width: 50%;
     width: 7vw;
     height: 14vh;
+}
+
+@media screen and (max-width: 800px) {
+    .header-image-text{
+        display: none;
+    }
+    .header-image-logo{
+        width: 14vw;
+        text-align: center;
+    }
 }
 
 .header-text {
@@ -181,6 +192,10 @@ body {
 
 .poem-ref {
     color: black;
+    text-decoration: none;
+}
+.poem-ref:hover{
+    text-decoration: #ac0000 underline;
 }
 
 .preloader {
@@ -341,6 +356,12 @@ body {
     }
 
     .content {
+        -ms-grid-column: 3;
+        -ms-grid-row: 3;
+        min-height: calc(85vh - 0.5vmin);
+        height: calc(100% + 4vh);
+    }
+    .grid-container{
         -ms-grid-column: 3;
         -ms-grid-row: 3;
         min-height: calc(85vh - 0.5vmin);
