@@ -14,7 +14,7 @@ $(function () {
             container.style.height = window.innerHeight.toString() + "px";
         });
         $(document).ready(function () {
-            $("#preloader_id").hide();
+            $(".preloader").hide();
             //$("#preloader_div_id").hide();
             //$("#preloader_gif_id").hide();
             //document.getElementById("preloader_id").style.display="none";
