@@ -8,11 +8,11 @@ $(function () {
             document.getElementById("upper-text").textContent = title;
         });
         $("#menu").load("/menu.html");
-        /*let container = document.getElementById("main-container");
+        let container = document.getElementById("main-container");
         container.style.height = window.innerHeight.toString() + "px";
         window.addEventListener('resize', () => {
             container.style.height = window.innerHeight.toString() + "px";
-        });*/
+        });
         $(document).ready(function () {
             $("#preloader_id").hide();
             //$("#preloader_div_id").hide();
